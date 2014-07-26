@@ -1,0 +1,13 @@
+onejar: DemoReporting
+main: org.litesoft.demoreporting.DemoReporting
+
+resources: 
+- LICENSE
+
+dependencies:
+- ../MultiPortJetty
+- ../LiteSoftServerUtils
+
+classpath:
+- ../LiteSoftServerUtils/libs|**.jar
+
