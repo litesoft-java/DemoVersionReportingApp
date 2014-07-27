@@ -11,3 +11,5 @@ dependencies:
 classpath:
 - ../LiteSoftServerUtils/libs|**.jar
 
+compileclasspath:
+- ../LinuxVersionedDirUpdater/updater|**.jar
