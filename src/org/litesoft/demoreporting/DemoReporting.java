@@ -1,5 +1,6 @@
 package org.litesoft.demoreporting;
 
+import org.litesoft.commonfoundation.base.*;
 import org.litesoft.jetty.*;
 import org.litesoft.jetty.Shutdown;
 import org.litesoft.linuxversioneddirupdater.*;
@@ -14,7 +15,7 @@ public class DemoReporting extends AppBackgroundUpdater implements Supplier<Repo
 
     public static void main( String[] args )
             throws Exception {
-        System.out.println( "DemoReporting vs 0.9" );
+        System.out.println( "DemoReporting vs 0.91" );
         if ( args.length != 3 ) { // validate that we have 3 params
             System.out.println( "Please provide three parameters: URL, DeploymentVersion, CSVTargets" );
             System.exit( 1 );
@@ -60,7 +61,7 @@ public class DemoReporting extends AppBackgroundUpdater implements Supplier<Repo
         add( sb, areNonCriticalUpdates(), "Non-Critical Updates" );
         add( sb, areCriticalUpdates(), "Critical Updates" );
         add( sb, areUnfinished(), "Unfinished" );
-        return "Status: " + sb;
+        return "Status: " + ConstrainTo.significantOrNull( sb.toString(), "OK" );
     }
 
     private void add( StringBuilder sb, boolean pAdd, String pText ) {

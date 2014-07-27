@@ -27,7 +27,6 @@ public class ReportingServlet extends HttpServlet {
 
         zWriter.println( pRequest.getPathInfo() );
         zWriter.println();
-        zWriter.println();
         zWriter.println( mReportSupplier.get() );
     }
 }

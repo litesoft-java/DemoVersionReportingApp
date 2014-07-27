@@ -1,8 +1,8 @@
-onejar: DemoReporting
-main: org.litesoft.demoreporting.DemoReporting
+onejar: app/app
 
 resources: 
 - LICENSE
+- resources/|**
 
 dependencies:
 - ../MultiPortJetty
