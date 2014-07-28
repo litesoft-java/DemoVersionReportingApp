@@ -8,7 +8,7 @@ import org.litesoft.linuxversioneddirupdater.*;
 import java8.util.function.*;
 
 public class DemoReporting extends AppBackgroundUpdater implements Supplier<Report> {
-    private static final String TWEAK = "GS";
+    private static final String TWEAK = "GS5";
 
     private static final String[] ADDITIONAL_MIME_TYPES = {
             //    "txt", "text/plain",
