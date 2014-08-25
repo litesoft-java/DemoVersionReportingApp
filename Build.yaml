@@ -7,9 +7,12 @@ resources:
 dependencies:
 - ../MultiPortJetty
 - ../LiteSoftServerUtils
+- ../LiteSoftCommonFoundation
 
 classpath:
-- ../LiteSoftServerUtils/libs|**.jar
+- ../LiteSoftServerUtils/libs/commons|**.jar
+- ../LiteSoftServerUtils/libs/http|**.jar
 
 compileclasspath:
+- ../LiteSoftServerUtils/libs/servlet-api-3.1.jar
 - ../LinuxVersionedDirUpdater/updater|**.jar
